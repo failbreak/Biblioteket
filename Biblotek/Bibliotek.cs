@@ -18,7 +18,7 @@ namespace Bibliotek
        public string HentBibliotek()
         {
            
-           return string.Format("velkommen til {0}. klokken er: {1}", bibliotek, DateTime.Now.ToString("HH:mm:ss"));
+           return string.Format("Velkommen til {0} - datoen idag er {1}", bibliotek, DateTime.Now.ToString("dd-MM-yyyy"));
             
         }
     }
