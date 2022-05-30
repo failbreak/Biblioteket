@@ -33,8 +33,8 @@ namespace Bibliotek
             {
                 case 1:
                     Console.WriteLine(biblo.HentBibliotek());
-                    Thread.Sleep(1200);
-                    break;
+                        Console.ReadKey();
+                        break;
 
                 case 2:
                         Console.Write("Opret låner: Navn: ");
@@ -42,13 +42,13 @@ namespace Bibliotek
                         Console.Write("\n Email:");
                         string e = Console.ReadLine();
                         biblo.OpretLaaner(n, e);
-                        Thread.Sleep(1200);
+                        Console.ReadKey();
                     break;
 
                 case 3:
                         biblo.HentBibliotek();
                         biblo.HentAlleLaanere();
-                        Thread.Sleep(1200);
+                        Console.ReadKey();
                         break;
 
                 case 4:
