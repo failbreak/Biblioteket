@@ -29,6 +29,7 @@ namespace Bibliotek
 
         public void HentLaaner()
         {
+
             return;
         }
     }
