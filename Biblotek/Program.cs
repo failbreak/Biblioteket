@@ -7,11 +7,7 @@ namespace Bibliotek
         static void Main(string[] args)
         {
             Menu();
-
-
-
         }
-
         public static void Menu()
         {
             Bibliotek biblo = new Bibliotek("Sønderborg bibliotek");
@@ -26,8 +22,6 @@ namespace Bibliotek
                    
                     Console.WriteLine($"{++tal} {item}");
                 }
-
-
             bool a = int.TryParse(Console.ReadLine(), out int sUserIn);
             if (!a)
             {
@@ -50,6 +44,7 @@ namespace Bibliotek
                     break;
 
                 case 3:
+                        biblo.HentBibliotek();
                         biblo.HentAlleLaanere();
                         Thread.Sleep(1200);
                         break;
@@ -62,7 +57,6 @@ namespace Bibliotek
                     break;
             }
             }
-
         }
     }
 }
