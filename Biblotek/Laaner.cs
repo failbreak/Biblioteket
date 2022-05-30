@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 namespace Biblioteket
 {
-    public class Laaner
+    public class Laaner : Person
     {
         int _laanerNummer;
-        string _navn;
-
+       
         public int LaanerNummer { get { return _laanerNummer; } }
-       public string Navn { get { return _navn; } }
 
-        public Laaner(string Navn, int LaanerNummer)
+        public Laaner(string Navn, int LaanerNummer, string email) : base(Navn , email)
          {
-            this._navn = Navn;
-
+            
             this._laanerNummer = LaanerNummer;
          }
 
+       
 
 
     }
+   
 }

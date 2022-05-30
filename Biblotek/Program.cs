@@ -39,7 +39,9 @@ namespace Bibliotek
                 case 2:
                         Console.Write("Opret låner: Navn: ");
                         string n = Console.ReadLine();
-                        biblo.OpretLaaner(n);
+                        Console.Write("\n Email:");
+                        string e = Console.ReadLine();
+                        biblo.OpretLaaner(n, e);
                         Thread.Sleep(1200);
                     break;
 
