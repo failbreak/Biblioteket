@@ -34,7 +34,7 @@ namespace Bibliotek
         public static void HentLaaner(string navn, int LaanerNummer, string Email)
         {
            
-           Console.WriteLine($"Lånernummer: {LaanerNummer} - Navn: {navn} Email:{Email} er låner hos Sønderborg Bibliotek");
+           Console.WriteLine($"Lånernummer: {LaanerNummer} - Navn: {navn} - Email:{Email} er låner hos Sønderborg Bibliotek");
         }
         public void HentAlleLaanere()
         {
