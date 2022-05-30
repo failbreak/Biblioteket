@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
+using Biblioteket;
 
 namespace Bibliotek
 {
@@ -15,8 +17,8 @@ namespace Bibliotek
             bibliotek = n;
             Laanere = new();
         }
+        List<Laaner> Laanere;
 
-        List<Laanere> Laanere;
 
 
        public string HentBibliotek()
@@ -26,29 +28,25 @@ namespace Bibliotek
             
         }
 
-        public void OpretLaaner(string Navn, int LaanerNummer)
+        public void OpretLaaner(string Navn)
         {
-           Laaner laaner = new Laaner(Navn, LaanerNummer);
-           laanere.add(laaner);
-           return string.Format($"Oprettet {Navn} med Lånernummer:{LaanerNummer}");
+            int LaanerNummer = 0;
+           Laaner laaner = new Laaner(Navn, ++LaanerNummer);
+           Laanere.Add(laaner);
+           Console.WriteLine($"Oprettet {Navn} med Lånernummer:{LaanerNummer}");
         }
 
-        public void HentLaaner(string navn, int LaanerNummer)
+        public static void HentLaaner(string navn, int LaanerNummer)
         {
-           return string.Format($"Lånernummer: {LaanerNummer} - Navn: {navn} er låner hos ");
+           Console.WriteLine($"Lånernummer: {LaanerNummer} - Navn: {navn} er låner hos ");
         }
 
         public void HentAlleLaanere()
         {
-            foreach (string LaanereN in Laanere)
-	{
+            foreach (var LaanereN in Laanere)
+	        {
                 Console.WriteLine(LaanereN);
-
-                int lol = "jerk";
-
-
-               
-	}
+	        }
         }
     }
 }
