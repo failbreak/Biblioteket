@@ -8,14 +8,17 @@ namespace Biblioteket
 {
     class Laaner
     {
-        int LaanerNummer { get; }
-        string Navn { get; }
+        int _laanerNummer;
+        string _navn;
+
+        public int LaanerNummer { get { return _laanerNummer; } }
+       public string Navn { get { return _navn; } }
 
         public Laaner(string Navn, int LaanerNummer)
          {
-            this.Navn = Navn;
+            this._navn = Navn;
 
-            this.LaanerNummer = LaanerNummer;
+            this._laanerNummer = LaanerNummer;
          }
 
 

@@ -11,14 +11,16 @@ namespace Bibliotek
     class Bibliotek
     {
 
+        int LaanerNummer;
         string bibliotek;
         public Bibliotek(string n)
         {
             bibliotek = n;
+            LaanerNummer = 0;
             Laanere = new();
         }
         List<Laaner> Laanere;
-
+       
 
 
        public string HentBibliotek()
@@ -30,7 +32,6 @@ namespace Bibliotek
 
         public void OpretLaaner(string Navn)
         {
-            int LaanerNummer = 0;
            Laaner laaner = new Laaner(Navn, ++LaanerNummer);
            Laanere.Add(laaner);
            Console.WriteLine($"Oprettet {Navn} med Lånernummer:{LaanerNummer}");
@@ -45,7 +46,7 @@ namespace Bibliotek
         {
             foreach (var LaanereN in Laanere)
 	        {
-                Console.WriteLine(LaanereN);
+                HentLaaner(LaanereN.Navn, LaanereN.LaanerNummer);
 	        }
         }
     }
