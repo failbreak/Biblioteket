@@ -13,8 +13,12 @@ namespace Bibliotek
         public Bibliotek(string n)
         {
             bibliotek = n;
-
+            Laanere = new();
         }
+
+        List<Laanere> Laanere;
+
+
        public string HentBibliotek()
         {
            
@@ -25,13 +29,26 @@ namespace Bibliotek
         public void OpretLaaner(string Navn, int LaanerNummer)
         {
            Laaner laaner = new Laaner(Navn, LaanerNummer);
-           laaner.add();
-           return laaner;
+           laanere.add(laaner);
+           return string.Format($"Oprettet {Navn} med Lånernummer:{LaanerNummer}");
         }
 
         public void HentLaaner(string navn, int LaanerNummer)
         {
            return string.Format($"Lånernummer: {LaanerNummer} - Navn: {navn} er låner hos ");
+        }
+
+        public void HentAlleLaanere()
+        {
+            foreach (string LaanereN in Laanere)
+	{
+                Console.WriteLine(LaanereN);
+
+                int lol = "jerk";
+
+
+               
+	}
         }
     }
 }
