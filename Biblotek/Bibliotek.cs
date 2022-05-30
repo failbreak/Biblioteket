@@ -25,6 +25,7 @@ namespace Bibliotek
         public void OpretLaaner(string Navn, int LaanerNummer)
         {
 
+
         }
 
         public void HentLaaner()
