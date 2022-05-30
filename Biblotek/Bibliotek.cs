@@ -24,13 +24,14 @@ namespace Bibliotek
 
         public void OpretLaaner(string Navn, int LaanerNummer)
         {
-
+           Laaner laaner = new Laaner(Navn, LaanerNummer);
+           laaner.add();
+           return laaner;
         }
 
-        public void HentLaaner()
+        public void HentLaaner(string navn, int LaanerNummer)
         {
-
-            return;
+           return string.Format($"Lånernummer: {LaanerNummer} - Navn: {navn} er låner hos ");
         }
     }
 }
