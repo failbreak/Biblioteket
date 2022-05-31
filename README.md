@@ -1,18 +1,20 @@
 ## Biblioteks opgaven
 
 
-# Max møenbo Larsen
+# Author
+Max møenbo Larsen
+Programmør i uddannelse
 
 
-## summary
+## Beskrivelse
 jeg har lavet et bibliotek i C#.
 du kan se bibliotekets navn og tiden nu her. 
 opret låner, udskrivlånere.
 
 
-## Sådan bruger du Bibliotek
+## Features
 
-Først så kommer der en menu
+menu
 
 ![image](https://user-images.githubusercontent.com/69219123/171060520-a5a8b157-4e47-4105-8384-d5c785740763.png)
 
@@ -31,4 +33,15 @@ som du kan se har du 3 valg muligheder
 ![image](https://user-images.githubusercontent.com/69219123/171060956-3d50aa0d-a600-4540-bb5b-de2a08a1fbfa.png)
 
 
----
+## Version
+
+* [V1](https://github.com/failbreak/Biblioteket/tree/Version1)
+* [V2](https://github.com/failbreak/Biblioteket/tree/Version2)
+* [V3](https://github.com/failbreak/Biblioteket/tree/Version3)
+* [V4](https://github.com/failbreak/Biblioteket/tree/version4)
+* [V5](https://github.com/failbreak/Biblioteket/tree/version5)
+
+
+## upcoming
+
+* Idk
